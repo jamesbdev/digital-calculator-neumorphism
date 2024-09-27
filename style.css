@@ -65,16 +65,15 @@ input {
     grid-row: 2/3;
 }
 
-.operator {
+.operator, #equals, .clear {
     background-color: #50545d;
     color: white;
     border: none;
     height: 50px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), -1px -1px 2px #cccccc;
-    border-radius: 5px;
 }
 
-.operator.small {
+.operator.small, .small {
     width: 50px;
     border-radius: 50%;
 }
@@ -84,6 +83,7 @@ input {
     grid-column: 1/4;
     grid-row: 2/3;
     width: 100%;
+    border-radius: 20px;
 }
 
 #equals {

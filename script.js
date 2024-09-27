@@ -1,23 +1,21 @@
 
-
 //add event listener to all buttons
 //select buttons
-const buttons = document.querySelectorAll("input.number");
+const buttons = document.querySelectorAll("input.number , input.operator");
 const screen = document.querySelector("input[type='text']");
 const equals = document.querySelector("#equals");
 const clear = document.querySelector("#clear");
-console.log(clear);
-console.log(equals);
+
 
 //clear the screen 
 clear.addEventListener('click', function(){
     screen.value = "";
 });
 
+//evaluate the expression and show the result on the screen
 equals.addEventListener('click', function(){
     //get the value of the screen 
     const screenValue = screen.value;
-    
     //evaluate the expression
     //split the expression 
     //if the expression contains + make addition
@@ -25,23 +23,19 @@ equals.addEventListener('click', function(){
 
 });
 
-
+//take the value from the button and show it on the screen
 buttons.forEach(button => {
     button.addEventListener('click', function(){
-        //console.log(typeof(button.value));
         let operation = "";
-        const number = parseInt(button.value);
+        //const number = parseInt(button.value);
         operation += button.value;
-        console.log(operation);
-        //capture the number and concatenate the operation 
+   
+         //update the screen input with the value of number 
         screen.value += operation;
-        //display the number on the screen
-        //get the screen input 
-        //update the screen input with the value of number 
-        
     });
 });
 
+//function for addition
 const addition = (a, b) => {
     return a + b;
 }
