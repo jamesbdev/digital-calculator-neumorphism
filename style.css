@@ -13,13 +13,15 @@ input {
     margin: 0 auto;
 }
 
+
+
 .calculator {
     width: 100%;
     max-width: 375px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #f4f4f4;
     height: 100vh;
     box-sizing: border-box;
@@ -27,10 +29,11 @@ input {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, auto);
     background-color: #50545d;
-    border: 3px solid #cccccc;
+    border: 4px solid #6f7178;
     gap: 10px;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .number {
@@ -50,6 +53,10 @@ input {
     grid-row: 1/2;
     height: 1.5rem;
     width: 100%;
+    border: 2px solid #6f7178;
+    padding: 0.4rem;
+    color: black;
+    text-align: right;
 }
 
 
